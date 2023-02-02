@@ -37,7 +37,7 @@ Stepper myStepper2 = Stepper(stepsPerRevolution, 8, 10, 9, 11);
 LiquidCrystal_I2C lcd(0x3F,16,2); //LCD 16x02, địa chỉ I2C là 0X27
 RTC_DS1307 rtc;
 char daysOfTheWeek[7][12] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
-
+/////////////////////////////////////////////////////////////////////////////
 void setup()
 {
 {
@@ -99,7 +99,7 @@ void motor_1_Lui(int speed) {
     digitalWrite(IN1, LOW);// chân này không có PWM
     analogWrite(IN2, speed);
 }
-
+//////////////////////////////////////////////
 void loop()
 { 
 {
